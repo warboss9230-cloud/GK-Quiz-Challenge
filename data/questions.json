@@ -41,7 +41,7 @@
 {"question":"When did World War 2 end?","options":["1942","1945","1948","1950"],"answer":"1945","category":"History","difficulty":"easy"},
 {"question":"Which sport uses wickets?","options":["Cricket","Football","Hockey","Rugby"],"answer":"Cricket","category":"Sports","difficulty":"easy"},
 {"question":"Which river flows in Egypt?","options":["Amazon","Nile","Yangtze","Danube"],"answer":"Nile","category":"Geography","difficulty":"easy"},
-{"question":"Which tag creates link?","options":["img","a","div","p"],"answer":"a","category":"Computer","difficulty":"easy"}
+{"question":"Which tag creates link?","options":["img","a","div","p"],"answer":"a","category":"Computer","difficulty":"easy"},
 
 {"question":"Which country is known as the Land of the Rising Sun?","options":["China","Japan","Thailand","South Korea"],"answer":"Japan","category":"World","difficulty":"easy"},
 {"question":"Which element has the chemical symbol O?","options":["Gold","Oxygen","Osmium","Silver"],"answer":"Oxygen","category":"Science","difficulty":"easy"},
@@ -99,7 +99,7 @@
 {"question":"Which metal is used in electric wires?","options":["Copper","Iron","Gold","Silver"],"answer":"Copper","category":"Science","difficulty":"easy"},
 {"question":"Who founded the Maurya Empire?","options":["Ashoka","Chandragupta Maurya","Akbar","Harsha"],"answer":"Chandragupta Maurya","category":"History","difficulty":"easy"},
 {"question":"Which file extension is used for HTML?","options":[".html",".jpg",".mp3",".exe"],"answer":".html","category":"Computer","difficulty":"easy"},
-{"question":"Which sport uses a mat and grappling?","options":["Wrestling","Cricket","Golf","Tennis"],"answer":"Wrestling","category":"Sports","difficulty":"easy"}
+{"question":"Which sport uses a mat and grappling?","options":["Wrestling","Cricket","Golf","Tennis"],"answer":"Wrestling","category":"Sports","difficulty":"easy"},
 {
 "question":"Which country hosted the 2020 Summer Olympics?","options":["China","Japan","Brazil","UK"],"answer":"Japan","category":"World","difficulty":"easy"},
 {
