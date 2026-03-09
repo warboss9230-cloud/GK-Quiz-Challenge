@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>Ultimate Quiz Pro</title>
+<title>Ultimate Quiz</title>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -22,7 +22,7 @@
 
 <div id="startScreen">
 
-<input id="playerName" placeholder="Enter Your Name">
+<input id="playerName" placeholder="Enter your name">
 
 <button onclick="startGame()">Start Game</button>
 
@@ -30,13 +30,10 @@
 
 <div id="menu" class="hidden">
 
-<button onclick="startMode('free')">🎮 Free Play</button>
-
-<button onclick="startMode('timer')">⏱ Timer Mode</button>
-
-<button onclick="startMode('level')">🧠 Level Mode</button>
-
-<button onclick="startMode('daily')">📅 Daily Quiz</button>
+<button onclick="startMode('free')">Free Play</button>
+<button onclick="startMode('timer')">Timer Mode</button>
+<button onclick="startMode('level')">Level Mode</button>
+<button onclick="startMode('daily')">Daily Quiz</button>
 
 </div>
 
@@ -51,16 +48,14 @@
 </div>
 
 <div class="progress">
-
 <div id="progressBar"></div>
-
 </div>
 
 <h2 id="question"></h2>
 
 <div id="options"></div>
 
-<button onclick="nextQuestion()">Next</button>
+<button id="nextBtn">Next</button>
 
 </div>
 
@@ -72,7 +67,7 @@
 
 <div id="achievements"></div>
 
-<h3>🏆 Leaderboard</h3>
+<h3>Leaderboard</h3>
 
 <div id="leaderboard"></div>
 
@@ -85,4 +80,4 @@
 <script src="js/script.js"></script>
 
 </body>
-  </html>
+</html>
