@@ -1,0 +1,99 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#0b0f1a;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+width:95%;
+max-width:500px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+padding:25px;
+border-radius:12px;
+border:2px solid #00f2ff;
+box-shadow:0 0 20px #00f2ff;
+text-align:center;
+}
+
+.hidden{
+display:none;
+}
+
+button{
+margin-top:10px;
+padding:10px 20px;
+border:none;
+border-radius:8px;
+background:#00f2ff;
+color:black;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 0 10px #00f2ff;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:6px;
+border:none;
+}
+
+#options button{
+display:block;
+width:100%;
+margin:8px 0;
+}
+
+.correct{
+background:green !important;
+}
+
+.wrong{
+background:red !important;
+}
+
+.topBar{
+display:flex;
+justify-content:space-between;
+margin-bottom:10px;
+}
+
+.progressBar{
+width:100%;
+height:8px;
+background:#333;
+border-radius:10px;
+margin:10px 0;
+}
+
+#progressFill{
+height:100%;
+width:0%;
+background:#00f2ff;
+border-radius:10px;
+}
+
+.hintBar{
+display:flex;
+justify-content:space-between;
+}
