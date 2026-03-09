@@ -33,7 +33,9 @@ const SUBJECTS = [
   { name: 'Computer',     emoji: '💻' },
   { name: 'Economics',    emoji: '📈' },
   { name: 'Environmental Studies', emoji: '🌿' },
-];
+  { name: 'Space and Galaxy',  emoji: '🚀' },
+  { name: 'Hindi',             emoji: '🪔' },
+   ];
 
 const ACHIEVEMENTS = [
   { id: 'first_win',   icon: '🥇', name: 'First Win',          desc: 'Complete your first quiz',        condition: s => s.totalGames >= 1 },
