@@ -1,83 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-<title>Ultimate Quiz</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizMaster — Knowledge Challenge</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-<canvas id="particles"></canvas>
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
 
-<div class="app">
+  <!-- ==================== SCREEN: HOME ==================== -->
+  <div id="screen-home" class="screen active">
+    <div class="home-container">
+      <div class="logo-area">
+        <div class="logo-icon">⚡</div>
+        <h1 class="logo-title">QuizMaster</h1>
+        <p class="logo-sub">Knowledge Challenge</p>
+      </div>
 
-<h1>🧠 Ultimate Quiz</h1>
+      <!-- Player Dashboard -->
+      <div class="player-dashboard glass-card">
+        <div class="player-info">
+          <div class="player-avatar" id="playerAvatar">🎓</div>
+          <div class="player-details">
+            <div class="player-name" id="playerName">Player</div>
+            <div class="player-level">Level <span id="playerLevel">1</span></div>
+          </div>
+          <div class="player-xp-total"><span id="playerXP">0</span> XP</div>
+        </div>
+        <div class="xp-bar-wrap">
+          <div class="xp-bar-track"><div class="xp-bar-fill" id="xpBarFill"></div></div>
+          <span class="xp-label" id="xpLabel">0 / 100 XP</span>
+        </div>
+      </div>
 
-<div id="startScreen">
+      <!-- Game Mode Cards -->
+      <h2 class="section-title">Choose Your Mode</h2>
+      <div class="mode-grid">
+        <div class="mode-card glass-card" onclick="selectMode('freeplay')">
+          <div class="mode-icon">🎮</div>
+          <h3>Free Play</h3>
+          <p>Random questions, no timer</p>
+          <div class="mode-badge">Unlimited</div>
+        </div>
+        <div class="mode-card glass-card" onclick="selectMode('timer')">
+          <div class="mode-icon">⏱️</div>
+          <h3>Timer Mode</h3>
+          <p>Race against the clock!</p>
+          <div class="mode-badge">Speed</div>
+        </div>
+        <div class="mode-card glass-card" onclick="selectMode('level')">
+          <div class="mode-icon">🏆</div>
+          <h3>Level Mode</h3>
+          <p>Unlock levels by winning</p>
+          <div class="mode-badge">Progress</div>
+        </div>
+        <div class="mode-card glass-card" onclick="selectMode('daily')">
+          <div class="mode-icon">📅</div>
+          <h3>Daily Quiz</h3>
+          <p>10 daily questions + bonus XP</p>
+          <div class="mode-badge daily-badge">+50 XP</div>
+        </div>
+      </div>
 
-<input id="playerName" placeholder="Enter your name">
+      <!-- Nav Buttons -->
+      <div class="nav-row">
+        <button class="btn-glass" onclick="showScreen('screen-leaderboard')">🏅 Leaderboard</button>
+        <button class="btn-glass" onclick="showScreen('screen-achievements')">🎖️ Achievements</button>
+      </div>
+    </div>
+  </div>
 
-<button onclick="startGame()">Start Game</button>
+  <!-- ==================== SCREEN: NAME INPUT ==================== -->
+  <div id="screen-name" class="screen">
+    <div class="center-card glass-card">
+      <div class="screen-icon">👤</div>
+      <h2>What's Your Name?</h2>
+      <input type="text" id="nameInput" class="glass-input" placeholder="Enter your name..." maxlength="20" />
+      <button class="btn-primary" onclick="saveName()">Let's Go! 🚀</button>
+      <button class="btn-ghost" onclick="showScreen('screen-home')">← Back</button>
+    </div>
+  </div>
 
-</div>
+  <!-- ==================== SCREEN: SUBJECT SELECT ==================== -->
+  <div id="screen-subject" class="screen">
+    <div class="subject-container">
+      <button class="back-btn" onclick="goBack()">← Back</button>
+      <h2 class="section-title">Choose a Subject</h2>
+      <p class="section-sub">Or pick "All Subjects" for a mixed challenge</p>
+      <div class="subject-grid" id="subjectGrid"></div>
+    </div>
+  </div>
 
-<div id="menu" class="hidden">
+  <!-- ==================== SCREEN: LEVEL SELECT ==================== -->
+  <div id="screen-levels" class="screen">
+    <div class="level-container">
+      <button class="back-btn" onclick="showScreen('screen-home')">← Back</button>
+      <h2 class="section-title">🏆 Level Select</h2>
+      <div class="level-grid" id="levelGrid"></div>
+    </div>
+  </div>
 
-<button onclick="startMode('free')">Free Play</button>
-<button onclick="startMode('timer')">Timer Mode</button>
-<button onclick="startMode('level')">Level Mode</button>
-<button onclick="startMode('daily')">Daily Quiz</button>
+  <!-- ==================== SCREEN: QUIZ ==================== -->
+  <div id="screen-quiz" class="screen">
+    <div class="quiz-container">
+      <!-- Header -->
+      <div class="quiz-header">
+        <button class="back-btn" onclick="quitQuiz()">✕ Quit</button>
+        <div class="quiz-meta">
+          <span class="quiz-mode-tag" id="quizModeTag">FREE PLAY</span>
+          <span class="quiz-subject-tag" id="quizSubjectTag">All Subjects</span>
+        </div>
+        <div class="quiz-score-display">
+          <span id="quizScore">0</span> pts
+        </div>
+      </div>
 
-</div>
+      <!-- Progress -->
+      <div class="quiz-progress-wrap">
+        <div class="quiz-progress-track">
+          <div class="quiz-progress-fill" id="quizProgressFill"></div>
+        </div>
+        <span class="quiz-progress-label" id="quizProgressLabel">1 / 10</span>
+      </div>
 
-<div id="quizBox" class="hidden">
+      <!-- Timer (hidden in freeplay) -->
+      <div class="timer-wrap" id="timerWrap">
+        <div class="timer-ring">
+          <svg viewBox="0 0 80 80">
+            <circle class="timer-track" cx="40" cy="40" r="34"/>
+            <circle class="timer-arc" id="timerArc" cx="40" cy="40" r="34"/>
+          </svg>
+          <div class="timer-num" id="timerNum">15</div>
+        </div>
+      </div>
 
-<div class="top">
+      <!-- Question Card -->
+      <div class="question-card glass-card" id="questionCard">
+        <div class="q-number" id="qNumber">Question 1</div>
+        <div class="q-subject" id="qSubject">Science</div>
+        <p class="q-text" id="qText">Loading...</p>
+      </div>
 
-<div>Score: <span id="score">0</span></div>
-<div>XP: <span id="xp">0</span></div>
-<div>Level: <span id="playerLevel">1</span></div>
+      <!-- Options -->
+      <div class="options-grid" id="optionsGrid"></div>
 
-</div>
+      <!-- Next Button -->
+      <button class="btn-primary btn-next hidden" id="nextBtn" onclick="nextQuestion()">
+        Next Question →
+      </button>
+    </div>
+  </div>
 
-<div class="progress">
-<div id="progressBar"></div>
-</div>
+  <!-- ==================== SCREEN: RESULT ==================== -->
+  <div id="screen-result" class="screen">
+    <div id="confettiLayer"></div>
+    <div class="result-container glass-card">
+      <div class="result-icon" id="resultIcon">🎉</div>
+      <h2 id="resultTitle">Quiz Complete!</h2>
+      <div class="result-stats">
+        <div class="stat-box">
+          <span class="stat-num" id="statCorrect">0</span>
+          <span class="stat-label">Correct</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" id="statWrong">0</span>
+          <span class="stat-label">Wrong</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" id="statScore">0</span>
+          <span class="stat-label">Score</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" id="statXP">+0</span>
+          <span class="stat-label">XP Earned</span>
+        </div>
+      </div>
+      <div class="result-accuracy">
+        <div class="accuracy-bar-track"><div class="accuracy-bar-fill" id="accuracyBar"></div></div>
+        <span id="accuracyLabel">0% Accuracy</span>
+      </div>
+      <div class="result-btns">
+        <button class="btn-primary" onclick="playAgain()">Play Again 🔄</button>
+        <button class="btn-glass" onclick="showScreen('screen-home')">🏠 Home</button>
+      </div>
+    </div>
+  </div>
 
-<h2 id="question"></h2>
+  <!-- ==================== SCREEN: LEADERBOARD ==================== -->
+  <div id="screen-leaderboard" class="screen">
+    <div class="list-container">
+      <button class="back-btn" onclick="showScreen('screen-home')">← Back</button>
+      <h2 class="section-title">🏅 Leaderboard</h2>
+      <p class="section-sub">Top 10 Local Players</p>
+      <div class="leaderboard-list" id="leaderboardList"></div>
+    </div>
+  </div>
 
-<div id="options"></div>
+  <!-- ==================== SCREEN: ACHIEVEMENTS ==================== -->
+  <div id="screen-achievements" class="screen">
+    <div class="list-container">
+      <button class="back-btn" onclick="showScreen('screen-home')">← Back</button>
+      <h2 class="section-title">🎖️ Achievements</h2>
+      <div class="achievements-grid" id="achievementsGrid"></div>
+    </div>
+  </div>
 
-<button id="nextBtn">Next</button>
+  <!-- ==================== BADGE POPUP ==================== -->
+  <div id="badgePopup" class="badge-popup hidden">
+    <div class="badge-popup-inner glass-card">
+      <div class="badge-popup-icon" id="badgePopupIcon">🥇</div>
+      <h3>Achievement Unlocked!</h3>
+      <p id="badgePopupName">First Win</p>
+      <button class="btn-primary" onclick="closeBadgePopup()">Awesome! 🎉</button>
+    </div>
+  </div>
 
-</div>
-
-<div id="resultBox" class="hidden">
-
-<h2>Quiz Complete</h2>
-
-<h1 id="finalScore"></h1>
-
-<div id="achievements"></div>
-
-<h3>Leaderboard</h3>
-
-<div id="leaderboard"></div>
-
-<button onclick="location.reload()">Play Again</button>
-
-</div>
-
-</div>
-
-<script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
