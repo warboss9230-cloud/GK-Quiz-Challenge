@@ -18,11 +18,9 @@ color:white;
 width:360px;
 
 backdrop-filter:blur(15px);
-
 background:rgba(255,255,255,0.05);
 
 border-radius:16px;
-
 padding:20px;
 
 box-shadow:0 0 25px cyan;
@@ -34,13 +32,10 @@ text-align:center;
 input{
 
 width:100%;
-
 padding:12px;
-
 margin-bottom:10px;
 
 border:none;
-
 border-radius:8px;
 
 }
@@ -48,19 +43,15 @@ border-radius:8px;
 button{
 
 width:100%;
-
 padding:12px;
-
 margin:6px 0;
 
 border:none;
-
 border-radius:8px;
 
 background:cyan;
 
 font-weight:bold;
-
 cursor:pointer;
 
 }
@@ -80,9 +71,7 @@ display:none;
 #options{
 
 display:flex;
-
 flex-direction:column;
-
 gap:10px;
 
 }
@@ -90,11 +79,9 @@ gap:10px;
 .option{
 
 background:rgba(255,255,255,0.1);
-
-padding:10px;
+padding:12px;
 
 border-radius:8px;
-
 cursor:pointer;
 
 }
@@ -107,24 +94,22 @@ background:rgba(255,255,255,0.2);
 
 .correct{
 
-background:green !important;
+background:#16a34a !important;
 
 }
 
 .wrong{
 
-background:red !important;
+background:#dc2626 !important;
 
 }
 
 .progress{
 
 height:8px;
-
 background:#1e293b;
 
 border-radius:10px;
-
 margin-bottom:15px;
 
 }
@@ -132,32 +117,9 @@ margin-bottom:15px;
 #progressBar{
 
 height:100%;
-
 width:100%;
-
 background:cyan;
 
 border-radius:10px;
-
-}
-
-canvas{
-
-position:fixed;
-
-top:0;
-left:0;
-
-z-index:-1;
-
-}
-
-@keyframes fall{
-
-to{
-
-transform:translateY(100vh) rotate(360deg);
-
-}
 
 }
