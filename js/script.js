@@ -7,51 +7,37 @@ let interval
 let xp=parseInt(localStorage.getItem("xp"))||0
 let playerLevel=parseInt(localStorage.getItem("playerLevel"))||1
 
-/* LOAD QUESTIONS */
+const nextBtn=document.getElementById("nextBtn")
 
 fetch("data/questions.json")
-
 .then(res=>res.json())
-
 .then(data=>{
-
 questions=data
-
 })
-
-/* START */
 
 function startGame(){
 
 document.getElementById("startScreen").classList.add("hidden")
-
 document.getElementById("menu").classList.remove("hidden")
 
 }
 
-/* MODE */
-
-function startMode(m){
+function startMode(){
 
 document.getElementById("menu").classList.add("hidden")
-
 document.getElementById("quizBox").classList.remove("hidden")
 
-shuffleQuestions()
+shuffle()
 
 loadQuestion()
 
 }
 
-/* RANDOM QUESTION ENGINE */
-
-function shuffleQuestions(){
+function shuffle(){
 
 questions.sort(()=>Math.random()-0.5)
 
 }
-
-/* LOAD */
 
 function loadQuestion(){
 
@@ -81,15 +67,13 @@ box.appendChild(div)
 
 }
 
-/* ANSWER */
-
 function selectAnswer(el,i){
 
 let correct=questions[current].answer
 
 let options=document.querySelectorAll(".option")
 
-options.forEach(o=>o.onclick=null)
+options.forEach(o=>o.style.pointerEvents="none")
 
 if(i===correct){
 
@@ -116,20 +100,15 @@ options[correct].classList.add("correct")
 }
 
 document.getElementById("score").innerText=score
-
 document.getElementById("xp").innerText=xp
-
 document.getElementById("playerLevel").innerText=playerLevel
 
 localStorage.setItem("xp",xp)
-
 localStorage.setItem("playerLevel",playerLevel)
 
 }
 
-/* NEXT */
-
-function nextQuestion(){
+nextBtn.onclick=()=>{
 
 current++
 
@@ -145,8 +124,6 @@ loadQuestion()
 
 }
 
-/* TIMER */
-
 function resetTimer(){
 
 clearInterval(interval)
@@ -161,9 +138,9 @@ timer--
 
 updateProgress()
 
-if(timer===0) nextQuestion()
+if(timer===0) nextBtn.click()
 
-},10000)
+},1000)
 
 }
 
@@ -173,14 +150,11 @@ document.getElementById("progressBar").style.width=(timer/15*100)+"%"
 
 }
 
-/* FINISH */
-
 function finish(){
 
 clearInterval(interval)
 
 document.getElementById("quizBox").classList.add("hidden")
-
 document.getElementById("resultBox").classList.remove("hidden")
 
 document.getElementById("finalScore").innerText=score+"/"+questions.length
@@ -191,7 +165,11 @@ confetti()
 
 }
 
-/* LEADERBOARD */
+function showAchievement(text){
+
+document.getElementById("achievements").innerHTML="🏆 "+text
+
+}
 
 function saveLeaderboard(){
 
@@ -227,16 +205,6 @@ document.getElementById("leaderboard").innerHTML=html
 
 }
 
-/* ACHIEVEMENTS */
-
-function showAchievement(text){
-
-document.getElementById("achievements").innerHTML="🏆 "+text
-
-}
-
-/* CONFETTI */
-
 function confetti(){
 
 for(let i=0;i<120;i++){
@@ -244,15 +212,12 @@ for(let i=0;i<120;i++){
 let div=document.createElement("div")
 
 div.style.position="fixed"
-
 div.style.width="8px"
-
 div.style.height="8px"
 
 div.style.background="hsl("+Math.random()*360+",100%,50%)"
 
 div.style.left=Math.random()*100+"%"
-
 div.style.top="-10px"
 
 div.style.animation="fall 3s linear"
@@ -263,4 +228,4 @@ setTimeout(()=>div.remove(),3000)
 
 }
 
-}
+  }
