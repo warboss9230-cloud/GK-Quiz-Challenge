@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GK Quiz Challenge</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="particles"></div>
+
+<div class="container">
+
+<!-- START SCREEN -->
+<div id="startScreen" class="card">
+<h1>🧠 GK Quiz Challenge</h1>
+
+<input type="text" id="playerName" placeholder="Enter your name">
+
+<select id="category">
+<option value="all">All Categories</option>
+<option value="Geography">Geography</option>
+<option value="History">History</option>
+<option value="Science">Science</option>
+<option value="World">World GK</option>
+<option value="Sports">Sports</option>
+<option value="Computer">Computer</option>
+</select>
+
+<select id="difficulty">
+<option value="easy">Easy</option>
+<option value="medium">Medium</option>
+<option value="hard">Hard</option>
+</select>
+
+<button onclick="startGame()">Start Game</button>
+<button onclick="showLeaderboard()">Leaderboard</button>
+</div>
+
+
+<!-- QUIZ SCREEN -->
+<div id="quizScreen" class="card hidden">
+
+<div class="topBar">
+<span id="level">Level 1</span>
+<span id="timer">20</span>
+<span id="score">Score:0</span>
+</div>
+
+<div id="progressText"></div>
+<div class="progressBar">
+<div id="progressFill"></div>
+</div>
+
+<h2 id="question"></h2>
+
+<div id="options"></div>
+
+<div class="hintBar">
+<button onclick="use5050()">50/50</button>
+<button onclick="skipQuestion()">Skip</button>
+</div>
+
+</div>
+
+
+<!-- RESULT SCREEN -->
+<div id="resultScreen" class="card hidden">
+
+<h2>Game Over</h2>
+
+<p id="finalScore"></p>
+<p id="correctCount"></p>
+<p id="wrongCount"></p>
+<p id="accuracy"></p>
+
+<button onclick="location.reload()">Play Again</button>
+
+</div>
+
+
+<!-- LEADERBOARD -->
+<div id="leaderboard" class="card hidden">
+<h2>🏆 Leaderboard</h2>
+<ul id="leaderboardList"></ul>
+<button onclick="location.reload()">Back</button>
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
