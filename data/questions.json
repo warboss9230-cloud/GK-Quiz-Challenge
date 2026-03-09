@@ -1,0 +1,23 @@
+[
+{
+"question":"What is the capital of India?",
+"options":["Mumbai","Delhi","Kolkata","Chennai"],
+"answer":"Delhi",
+"category":"World",
+"difficulty":"easy"
+},
+{
+"question":"Which planet is called the Red Planet?",
+"options":["Earth","Mars","Jupiter","Venus"],
+"answer":"Mars",
+"category":"Science",
+"difficulty":"easy"
+},
+{
+"question":"Who invented the computer?",
+"options":["Newton","Charles Babbage","Einstein","Tesla"],
+"answer":"Charles Babbage",
+"category":"Computer",
+"difficulty":"easy"
+}
+]
