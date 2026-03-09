@@ -1,202 +1,108 @@
 [
-{"question":"What is the capital of India?","options":["Mumbai","Delhi","Kolkata","Chennai"],"answer":"Delhi","category":"World","difficulty":"easy"},
-{"question":"Which planet is called the Red Planet?","options":["Earth","Mars","Jupiter","Venus"],"answer":"Mars","category":"Science","difficulty":"easy"},
-{"question":"Who invented the computer?","options":["Newton","Charles Babbage","Einstein","Tesla"],"answer":"Charles Babbage","category":"Computer","difficulty":"easy"},
-{"question":"Which country hosted the 2016 Olympics?","options":["China","Brazil","UK","Japan"],"answer":"Brazil","category":"Sports","difficulty":"easy"},
-{"question":"Which river is the longest in the world?","options":["Amazon","Nile","Ganga","Yangtze"],"answer":"Nile","category":"Geography","difficulty":"easy"},
-{"question":"Who was the first President of the USA?","options":["Lincoln","Washington","Jefferson","Adams"],"answer":"George Washington","category":"History","difficulty":"easy"},
-{"question":"Which gas do plants absorb?","options":["Oxygen","Carbon dioxide","Nitrogen","Helium"],"answer":"Carbon dioxide","category":"Science","difficulty":"easy"},
-{"question":"What does CPU stand for?","options":["Central Process Unit","Central Processing Unit","Computer Process Unit","Central Program Unit"],"answer":"Central Processing Unit","category":"Computer","difficulty":"easy"},
-{"question":"Which sport uses a shuttlecock?","options":["Tennis","Cricket","Badminton","Hockey"],"answer":"Badminton","category":"Sports","difficulty":"easy"},
-{"question":"Which is the largest ocean?","options":["Indian","Atlantic","Pacific","Arctic"],"answer":"Pacific","category":"Geography","difficulty":"easy"},
-
-{"question":"Who discovered gravity?","options":["Newton","Einstein","Galileo","Tesla"],"answer":"Newton","category":"Science","difficulty":"easy"},
-{"question":"Which continent is Egypt in?","options":["Asia","Africa","Europe","Australia"],"answer":"Africa","category":"Geography","difficulty":"easy"},
-{"question":"What is the national animal of India?","options":["Lion","Tiger","Elephant","Leopard"],"answer":"Tiger","category":"World","difficulty":"easy"},
-{"question":"Which device stores data permanently?","options":["RAM","ROM","Cache","Register"],"answer":"ROM","category":"Computer","difficulty":"easy"},
-{"question":"Who wrote Ramayana?","options":["Kalidas","Valmiki","Tulsidas","Ved Vyasa"],"answer":"Valmiki","category":"History","difficulty":"easy"},
-{"question":"How many players in a football team?","options":["9","10","11","12"],"answer":"11","category":"Sports","difficulty":"easy"},
-{"question":"Which is the smallest planet?","options":["Mercury","Mars","Venus","Earth"],"answer":"Mercury","category":"Science","difficulty":"easy"},
-{"question":"Which country built the Great Wall?","options":["India","China","Japan","Korea"],"answer":"China","category":"History","difficulty":"easy"},
-{"question":"Which mountain is highest?","options":["K2","Everest","Kangchenjunga","Makalu"],"answer":"Everest","category":"Geography","difficulty":"easy"},
-{"question":"What does HTML stand for?","options":["Hyper Text Markup Language","High Text Machine Language","Hyper Tool Mark Language","Home Tool Mark Language"],"answer":"Hyper Text Markup Language","category":"Computer","difficulty":"easy"},
-
-{"question":"Which vitamin comes from sunlight?","options":["A","B","C","D"],"answer":"D","category":"Science","difficulty":"easy"},
-{"question":"Who painted Mona Lisa?","options":["Van Gogh","Da Vinci","Picasso","Michelangelo"],"answer":"Da Vinci","category":"History","difficulty":"easy"},
-{"question":"Which sport uses a bat and ball?","options":["Cricket","Football","Hockey","Badminton"],"answer":"Cricket","category":"Sports","difficulty":"easy"},
-{"question":"Which is the largest continent?","options":["Asia","Africa","Europe","Antarctica"],"answer":"Asia","category":"Geography","difficulty":"easy"},
-{"question":"Which company created Windows?","options":["Apple","Google","Microsoft","IBM"],"answer":"Microsoft","category":"Computer","difficulty":"easy"},
-{"question":"Which gas is most abundant in air?","options":["Oxygen","Nitrogen","Carbon dioxide","Hydrogen"],"answer":"Nitrogen","category":"Science","difficulty":"easy"},
-{"question":"Who was first man on Moon?","options":["Yuri Gagarin","Neil Armstrong","Buzz Aldrin","John Glenn"],"answer":"Neil Armstrong","category":"History","difficulty":"easy"},
-{"question":"Which sport uses a racket?","options":["Cricket","Tennis","Football","Golf"],"answer":"Tennis","category":"Sports","difficulty":"easy"},
-{"question":"Which desert is largest?","options":["Sahara","Gobi","Kalahari","Thar"],"answer":"Sahara","category":"Geography","difficulty":"easy"},
-{"question":"Which language runs in browser?","options":["Java","Python","JavaScript","C++"],"answer":"JavaScript","category":"Computer","difficulty":"easy"},
-
-{"question":"What is H2O?","options":["Hydrogen","Water","Oxygen","Salt"],"answer":"Water","category":"Science","difficulty":"easy"},
-{"question":"Who discovered America?","options":["Columbus","Magellan","Cook","Vespucci"],"answer":"Columbus","category":"History","difficulty":"easy"},
-{"question":"Which sport has NBA league?","options":["Basketball","Football","Tennis","Cricket"],"answer":"Basketball","category":"Sports","difficulty":"easy"},
-{"question":"Which country has largest population?","options":["India","USA","China","Russia"],"answer":"India","category":"World","difficulty":"easy"},
-{"question":"Which device inputs text?","options":["Mouse","Keyboard","Monitor","Printer"],"answer":"Keyboard","category":"Computer","difficulty":"easy"},
-{"question":"Which organ pumps blood?","options":["Lungs","Brain","Heart","Liver"],"answer":"Heart","category":"Science","difficulty":"easy"},
-{"question":"When did World War 2 end?","options":["1942","1945","1948","1950"],"answer":"1945","category":"History","difficulty":"easy"},
-{"question":"Which sport uses wickets?","options":["Cricket","Football","Hockey","Rugby"],"answer":"Cricket","category":"Sports","difficulty":"easy"},
-{"question":"Which river flows in Egypt?","options":["Amazon","Nile","Yangtze","Danube"],"answer":"Nile","category":"Geography","difficulty":"easy"},
-{"question":"Which tag creates link?","options":["img","a","div","p"],"answer":"a","category":"Computer","difficulty":"easy"},
-
-{"question":"Which country is known as the Land of the Rising Sun?","options":["China","Japan","Thailand","South Korea"],"answer":"Japan","category":"World","difficulty":"easy"},
-{"question":"Which element has the chemical symbol O?","options":["Gold","Oxygen","Osmium","Silver"],"answer":"Oxygen","category":"Science","difficulty":"easy"},
-{"question":"Who was the first Prime Minister of India?","options":["Nehru","Patel","Indira Gandhi","Rajendra Prasad"],"answer":"Nehru","category":"History","difficulty":"easy"},
-{"question":"Which computer part is called the brain of computer?","options":["RAM","CPU","Hard Disk","GPU"],"answer":"CPU","category":"Computer","difficulty":"easy"},
-{"question":"Which sport uses a hoop and net?","options":["Basketball","Football","Cricket","Baseball"],"answer":"Basketball","category":"Sports","difficulty":"easy"},
-{"question":"Which country has the Eiffel Tower?","options":["Italy","France","Germany","Spain"],"answer":"France","category":"Geography","difficulty":"easy"},
-{"question":"What is the boiling point of water?","options":["90°C","100°C","80°C","70°C"],"answer":"100°C","category":"Science","difficulty":"easy"},
-{"question":"Which Mughal emperor built the Taj Mahal?","options":["Akbar","Shah Jahan","Aurangzeb","Babur"],"answer":"Shah Jahan","category":"History","difficulty":"easy"},
-{"question":"Which company created the Android OS?","options":["Apple","Google","Microsoft","Samsung"],"answer":"Google","category":"Computer","difficulty":"easy"},
-{"question":"How many players are in a cricket team?","options":["9","10","11","12"],"answer":"11","category":"Sports","difficulty":"easy"},
-
-{"question":"Which is the largest desert in the world?","options":["Sahara","Gobi","Thar","Arabian"],"answer":"Sahara","category":"Geography","difficulty":"easy"},
-{"question":"Which metal is liquid at room temperature?","options":["Iron","Mercury","Copper","Aluminum"],"answer":"Mercury","category":"Science","difficulty":"easy"},
-{"question":"Who wrote the Mahabharata?","options":["Valmiki","Ved Vyasa","Kalidas","Chanakya"],"answer":"Ved Vyasa","category":"History","difficulty":"easy"},
-{"question":"What does RAM stand for?","options":["Random Access Memory","Read Access Memory","Run Access Memory","Real Access Memory"],"answer":"Random Access Memory","category":"Computer","difficulty":"easy"},
-{"question":"Which sport is known as the 'gentleman's game'?","options":["Football","Cricket","Tennis","Hockey"],"answer":"Cricket","category":"Sports","difficulty":"easy"},
-{"question":"Which continent is Brazil in?","options":["Asia","Africa","South America","Europe"],"answer":"South America","category":"Geography","difficulty":"easy"},
-{"question":"What gas do humans breathe in?","options":["Carbon dioxide","Oxygen","Nitrogen","Hydrogen"],"answer":"Oxygen","category":"Science","difficulty":"easy"},
-{"question":"Who was known as the Iron Man of India?","options":["Gandhi","Patel","Nehru","Subhash Bose"],"answer":"Patel","category":"History","difficulty":"easy"},
-{"question":"Which device prints documents?","options":["Monitor","Printer","Keyboard","Scanner"],"answer":"Printer","category":"Computer","difficulty":"easy"},
-{"question":"Which sport uses a goal post?","options":["Football","Cricket","Tennis","Golf"],"answer":"Football","category":"Sports","difficulty":"easy"},
-
-{"question":"Which river is longest in India?","options":["Yamuna","Ganga","Godavari","Krishna"],"answer":"Ganga","category":"Geography","difficulty":"easy"},
-{"question":"Which planet is closest to the Sun?","options":["Venus","Mercury","Earth","Mars"],"answer":"Mercury","category":"Science","difficulty":"easy"},
-{"question":"Who was the first President of India?","options":["Rajendra Prasad","Nehru","Gandhi","Patel"],"answer":"Rajendra Prasad","category":"History","difficulty":"easy"},
-{"question":"Which programming language is mainly used for web pages?","options":["JavaScript","C","Java","Python"],"answer":"JavaScript","category":"Computer","difficulty":"easy"},
-{"question":"Which sport uses a puck?","options":["Ice Hockey","Cricket","Football","Basketball"],"answer":"Ice Hockey","category":"Sports","difficulty":"easy"},
-
-{"question":"Which country has the Great Pyramid of Giza?","options":["Mexico","Egypt","India","Peru"],"answer":"Egypt","category":"Geography","difficulty":"easy"},
-{"question":"Which part of plant makes food?","options":["Root","Leaf","Stem","Flower"],"answer":"Leaf","category":"Science","difficulty":"easy"},
-{"question":"Who led the Indian National Army?","options":["Gandhi","Subhash Chandra Bose","Patel","Bhagat Singh"],"answer":"Subhash Chandra Bose","category":"History","difficulty":"easy"},
-{"question":"Which key is used to delete text?","options":["Enter","Delete","Tab","Shift"],"answer":"Delete","category":"Computer","difficulty":"easy"},
-{"question":"Which sport uses a net and ball?","options":["Volleyball","Cricket","Golf","Rugby"],"answer":"Volleyball","category":"Sports","difficulty":"easy"},
-
-{"question":"Which is the largest island in the world?","options":["Greenland","Australia","Borneo","Madagascar"],"answer":"Greenland","category":"Geography","difficulty":"easy"},
-{"question":"Which organ controls the human body?","options":["Heart","Brain","Lungs","Kidney"],"answer":"Brain","category":"Science","difficulty":"easy"},
-{"question":"Who discovered penicillin?","options":["Alexander Fleming","Newton","Einstein","Darwin"],"answer":"Alexander Fleming","category":"Science","difficulty":"easy"},
-{"question":"Which company created the iPhone?","options":["Google","Apple","Microsoft","Nokia"],"answer":"Apple","category":"Computer","difficulty":"easy"},
-{"question":"Which sport uses clubs and a ball?","options":["Golf","Football","Basketball","Cricket"],"answer":"Golf","category":"Sports","difficulty":"easy"},
-
-{"question":"Which ocean is the smallest?","options":["Indian","Pacific","Arctic","Atlantic"],"answer":"Arctic","category":"Geography","difficulty":"easy"},
-{"question":"Which vitamin helps eyesight?","options":["Vitamin A","Vitamin B","Vitamin C","Vitamin D"],"answer":"Vitamin A","category":"Science","difficulty":"easy"},
-{"question":"Who was called the Father of the Nation in India?","options":["Nehru","Gandhi","Patel","Tagore"],"answer":"Gandhi","category":"History","difficulty":"easy"},
-{"question":"Which company created the Java language?","options":["Sun Microsystems","Microsoft","Apple","Google"],"answer":"Sun Microsystems","category":"Computer","difficulty":"easy"},
-{"question":"Which sport is played at Wimbledon?","options":["Cricket","Football","Tennis","Hockey"],"answer":"Tennis","category":"Sports","difficulty":"easy"},
-
-{"question":"Which country is famous for pizza and pasta?","options":["France","Italy","Spain","Greece"],"answer":"Italy","category":"World","difficulty":"easy"},
-{"question":"Which gas protects Earth from UV rays?","options":["Ozone","Nitrogen","Oxygen","Helium"],"answer":"Ozone","category":"Science","difficulty":"easy"},
-{"question":"Who wrote the Indian national anthem?","options":["Tagore","Nehru","Gandhi","Bankim Chandra"],"answer":"Tagore","category":"History","difficulty":"easy"},
-{"question":"Which device connects computer networks?","options":["Router","Mouse","Printer","Monitor"],"answer":"Router","category":"Computer","difficulty":"easy"},
-{"question":"Which sport uses a ring and punching?","options":["Boxing","Karate","Judo","Wrestling"],"answer":"Boxing","category":"Sports","difficulty":"easy"},
-
-{"question":"Which is the coldest continent?","options":["Asia","Antarctica","Europe","Africa"],"answer":"Antarctica","category":"Geography","difficulty":"easy"},
-{"question":"Which metal is used in electric wires?","options":["Copper","Iron","Gold","Silver"],"answer":"Copper","category":"Science","difficulty":"easy"},
-{"question":"Who founded the Maurya Empire?","options":["Ashoka","Chandragupta Maurya","Akbar","Harsha"],"answer":"Chandragupta Maurya","category":"History","difficulty":"easy"},
-{"question":"Which file extension is used for HTML?","options":[".html",".jpg",".mp3",".exe"],"answer":".html","category":"Computer","difficulty":"easy"},
-{"question":"Which sport uses a mat and grappling?","options":["Wrestling","Cricket","Golf","Tennis"],"answer":"Wrestling","category":"Sports","difficulty":"easy"},
-{
-"question":"Which country hosted the 2020 Summer Olympics?","options":["China","Japan","Brazil","UK"],"answer":"Japan","category":"World","difficulty":"easy"},
-{
-"question":"Which instrument measures earthquakes?","options":["Barometer","Seismograph","Thermometer","Altimeter"],"answer":"Seismograph","category":"Science","difficulty":"easy"},
-{
-"question":"Who was the founder of the Gupta Empire?","options":["Chandragupta I","Ashoka","Harsha","Bindusara"],"answer":"Chandragupta I","category":"History","difficulty":"easy"},
-{
-"question":"Which device displays images from a computer?","options":["Monitor","Keyboard","Router","Scanner"],"answer":"Monitor","category":"Computer","difficulty":"easy"},
-{
-"question":"Which sport uses a bowling lane and pins?","options":["Bowling","Golf","Cricket","Baseball"],"answer":"Bowling","category":"Sports","difficulty":"easy"},
-
-{
-"question":"Which river is the longest in Asia?","options":["Ganga","Yangtze","Mekong","Indus"],"answer":"Yangtze","category":"Geography","difficulty":"easy"},
-{
-"question":"Which gas is used in balloons to make them float?","options":["Oxygen","Helium","Nitrogen","Carbon dioxide"],"answer":"Helium","category":"Science","difficulty":"easy"},
-{
-"question":"Who was the first woman Prime Minister of India?","options":["Indira Gandhi","Sarojini Naidu","Pratibha Patil","Sonia Gandhi"],"answer":"Indira Gandhi","category":"History","difficulty":"easy"},
-{
-"question":"Which company developed the Linux operating system?","options":["Microsoft","Apple","Community","IBM"],"answer":"Community","category":"Computer","difficulty":"easy"},
-{
-"question":"Which sport uses a long stick called a cue?","options":["Snooker","Hockey","Cricket","Golf"],"answer":"Snooker","category":"Sports","difficulty":"easy"},
-
-{
-"question":"Which country is the largest in the world by area?","options":["USA","China","Russia","Canada"],"answer":"Russia","category":"World","difficulty":"easy"},
-{
-"question":"Which organ helps humans breathe?","options":["Heart","Lungs","Kidney","Brain"],"answer":"Lungs","category":"Science","difficulty":"easy"},
-{
-"question":"Who wrote the book 'Discovery of India'?","options":["Nehru","Gandhi","Tagore","Patel"],"answer":"Nehru","category":"History","difficulty":"easy"},
-{
-"question":"Which company created the Chrome browser?","options":["Google","Microsoft","Apple","Mozilla"],"answer":"Google","category":"Computer","difficulty":"easy"},
-{
-"question":"Which sport is played on ice with skates?","options":["Ice Hockey","Cricket","Rugby","Football"],"answer":"Ice Hockey","category":"Sports","difficulty":"easy"},
-
-{
-"question":"Which mountain range separates Europe and Asia?","options":["Alps","Himalayas","Ural","Andes"],"answer":"Ural","category":"Geography","difficulty":"easy"},
-{
-"question":"Which planet is known for its rings?","options":["Mars","Saturn","Jupiter","Mercury"],"answer":"Saturn","category":"Science","difficulty":"easy"},
-{
-"question":"Who was the first Emperor of Rome?","options":["Julius Caesar","Augustus","Nero","Constantine"],"answer":"Augustus","category":"History","difficulty":"easy"},
-{
-"question":"Which key is used to start a new line in typing?","options":["Enter","Ctrl","Shift","Alt"],"answer":"Enter","category":"Computer","difficulty":"easy"},
-{
-"question":"Which sport uses a ring and a basketball?","options":["Basketball","Handball","Netball","Volleyball"],"answer":"Basketball","category":"Sports","difficulty":"easy"},
-
-{
-"question":"Which country has the Amazon rainforest?","options":["Brazil","India","China","Mexico"],"answer":"Brazil","category":"Geography","difficulty":"easy"},
-{
-"question":"What is the chemical symbol for gold?","options":["Ag","Au","Gd","Go"],"answer":"Au","category":"Science","difficulty":"easy"},
-{
-"question":"Who was the leader of the Salt March?","options":["Nehru","Gandhi","Patel","Subhash Bose"],"answer":"Gandhi","category":"History","difficulty":"easy"},
-{
-"question":"Which device stores files long term?","options":["Hard Disk","RAM","Cache","Register"],"answer":"Hard Disk","category":"Computer","difficulty":"easy"},
-{
-"question":"Which sport uses a bat, ball and bases?","options":["Baseball","Cricket","Tennis","Football"],"answer":"Baseball","category":"Sports","difficulty":"easy"},
-
-{
-"question":"Which is the largest lake in the world?","options":["Caspian Sea","Lake Superior","Lake Victoria","Lake Baikal"],"answer":"Caspian Sea","category":"Geography","difficulty":"easy"},
-{
-"question":"Which blood cells fight infections?","options":["Red cells","White cells","Platelets","Plasma"],"answer":"White cells","category":"Science","difficulty":"easy"},
-{
-"question":"Who was the first Governor-General of independent India?","options":["Rajagopalachari","Mountbatten","Nehru","Rajendra Prasad"],"answer":"Mountbatten","category":"History","difficulty":"easy"},
-{
-"question":"Which company makes the PlayStation console?","options":["Sony","Microsoft","Nintendo","Sega"],"answer":"Sony","category":"Computer","difficulty":"easy"},
-{
-"question":"Which sport includes the Tour de France race?","options":["Cycling","Running","Swimming","Skiing"],"answer":"Cycling","category":"Sports","difficulty":"easy"},
-
-{
-"question":"Which continent has the Sahara Desert?","options":["Asia","Africa","Australia","Europe"],"answer":"Africa","category":"Geography","difficulty":"easy"},
-{
-"question":"Which part of the eye controls light entry?","options":["Cornea","Iris","Lens","Retina"],"answer":"Iris","category":"Science","difficulty":"easy"},
-{
-"question":"Who was the founder of Sikhism?","options":["Guru Nanak","Guru Gobind Singh","Guru Arjan","Guru Tegh Bahadur"],"answer":"Guru Nanak","category":"History","difficulty":"easy"},
-{
-"question":"Which protocol is used to load web pages?","options":["HTTP","FTP","SMTP","TCP"],"answer":"HTTP","category":"Computer","difficulty":"easy"},
-{
-"question":"Which sport uses a balance beam?","options":["Gymnastics","Diving","Skating","Athletics"],"answer":"Gymnastics","category":"Sports","difficulty":"easy"},
-
-{
-"question":"Which country has the city of Dubai?","options":["Saudi Arabia","UAE","Qatar","Oman"],"answer":"UAE","category":"World","difficulty":"easy"},
-{
-"question":"Which planet is the largest in the solar system?","options":["Saturn","Jupiter","Neptune","Earth"],"answer":"Jupiter","category":"Science","difficulty":"easy"},
-{
-"question":"Who was the first woman to win a Nobel Prize?","options":["Marie Curie","Rosalind Franklin","Jane Goodall","Dorothy Hodgkin"],"answer":"Marie Curie","category":"History","difficulty":"easy"},
-{
-"question":"Which programming language was created by Brendan Eich?","options":["Java","JavaScript","Python","Ruby"],"answer":"JavaScript","category":"Computer","difficulty":"easy"},
-{
-"question":"Which sport uses a shuttle and racket?","options":["Badminton","Tennis","Squash","Table Tennis"],"answer":"Badminton","category":"Sports","difficulty":"easy"},
-
-{
-"question":"Which ocean lies between Africa and Australia?","options":["Pacific","Indian","Atlantic","Arctic"],"answer":"Indian","category":"Geography","difficulty":"easy"},
-{
-"question":"Which vitamin helps blood clotting?","options":["Vitamin A","Vitamin K","Vitamin D","Vitamin C"],"answer":"Vitamin K","category":"Science","difficulty":"easy"},
-{
-"question":"Who was the last Mughal emperor?","options":["Bahadur Shah Zafar","Akbar","Aurangzeb","Shah Alam"],"answer":"Bahadur Shah Zafar","category":"History","difficulty":"easy"},
-{
-"question":"Which file format is commonly used for images?","options":[".png",".txt",".exe",".html"],"answer":".png","category":"Computer","difficulty":"easy"},
-{
-"question":"Which sport uses a table, paddle and small ball?","options":["Table Tennis","Tennis","Badminton","Squash"],"answer":"Table Tennis","category":"Sports","difficulty":"easy"}
+{"question":"What is 6 × 7?","options":["36","42","48","56"],"answer":"42","category":"Maths","difficulty":"easy"},
+{"question":"What is 50 + 25?","options":["65","70","75","80"],"answer":"75","category":"Maths","difficulty":"easy"},
+{"question":"How many sides does a square have?","options":["3","4","5","6"],"answer":"4","category":"Maths","difficulty":"easy"},
+{"question":"What is 100 − 45?","options":["45","50","55","60"],"answer":"55","category":"Maths","difficulty":"easy"},
+{"question":"What is 12 × 5?","options":["50","55","60","65"],"answer":"60","category":"Maths","difficulty":"easy"},
+{"question":"What is half of 80?","options":["30","35","40","45"],"answer":"40","category":"Maths","difficulty":"easy"},
+{"question":"How many centimeters in 1 meter?","options":["10","50","100","1000"],"answer":"100","category":"Maths","difficulty":"easy"},
+{"question":"What is 9 × 8?","options":["64","72","81","90"],"answer":"72","category":"Maths","difficulty":"easy"},
+{"question":"What is 144 ÷ 12?","options":["10","11","12","13"],"answer":"12","category":"Maths","difficulty":"easy"},
+{"question":"What is the square of 6?","options":["30","36","42","48"],"answer":"36","category":"Maths","difficulty":"easy"},
+{"question":"Which planet is known as the Blue Planet?","options":["Mars","Earth","Venus","Jupiter"],"answer":"Earth","category":"Science","difficulty":"easy"},
+{"question":"Which gas do plants release?","options":["Oxygen","Nitrogen","Helium","Carbon dioxide"],"answer":"Oxygen","category":"Science","difficulty":"easy"},
+{"question":"What part of body helps us see?","options":["Ear","Eye","Nose","Hand"],"answer":"Eye","category":"Science","difficulty":"easy"},
+{"question":"Which organ helps us breathe?","options":["Heart","Lungs","Brain","Kidney"],"answer":"Lungs","category":"Science","difficulty":"easy"},
+{"question":"What do bees make?","options":["Milk","Honey","Juice","Water"],"answer":"Honey","category":"Science","difficulty":"easy"},
+{"question":"Which part of plant absorbs water?","options":["Leaf","Stem","Root","Flower"],"answer":"Root","category":"Science","difficulty":"easy"},
+{"question":"Which star gives us light?","options":["Moon","Mars","Sun","Venus"],"answer":"Sun","category":"Science","difficulty":"easy"},
+{"question":"Which vitamin do we get from sunlight?","options":["A","B","C","D"],"answer":"D","category":"Science","difficulty":"easy"},
+{"question":"Which sense organ smells?","options":["Nose","Eye","Ear","Tongue"],"answer":"Nose","category":"Science","difficulty":"easy"},
+{"question":"What do we call animals that eat plants?","options":["Carnivores","Herbivores","Omnivores","Insects"],"answer":"Herbivores","category":"Science","difficulty":"easy"},
+{"question":"Which device is used to move cursor?","options":["Keyboard","Mouse","Monitor","Printer"],"answer":"Mouse","category":"Computer","difficulty":"easy"},
+{"question":"Which part shows pictures on computer?","options":["Monitor","CPU","Keyboard","Mouse"],"answer":"Monitor","category":"Computer","difficulty":"easy"},
+{"question":"Which key is used to start typing on new line?","options":["Shift","Enter","Ctrl","Alt"],"answer":"Enter","category":"Computer","difficulty":"easy"},
+{"question":"Which company makes Windows OS?","options":["Google","Microsoft","Apple","IBM"],"answer":"Microsoft","category":"Computer","difficulty":"easy"},
+{"question":"Which device prints paper?","options":["Scanner","Printer","Monitor","Mouse"],"answer":"Printer","category":"Computer","difficulty":"easy"},
+{"question":"Which company created Android?","options":["Apple","Google","Nokia","Sony"],"answer":"Google","category":"Computer","difficulty":"easy"},
+{"question":"What does CPU stand for?","options":["Central Process Unit","Central Processing Unit","Computer Process Unit","Control Processing Unit"],"answer":"Central Processing Unit","category":"Computer","difficulty":"easy"},
+{"question":"Which device stores files?","options":["Hard disk","Monitor","Keyboard","Mouse"],"answer":"Hard disk","category":"Computer","difficulty":"easy"},
+{"question":"Which language is used for web pages?","options":["HTML","C++","Java","Python"],"answer":"HTML","category":"Computer","difficulty":"easy"},
+{"question":"Which device scans photos?","options":["Printer","Scanner","Mouse","Speaker"],"answer":"Scanner","category":"Computer","difficulty":"easy"},
+{"question":"What is the capital of India?","options":["Mumbai","Delhi","Chennai","Kolkata"],"answer":"Delhi","category":"Indian GK","difficulty":"easy"},
+{"question":"What is the national animal of India?","options":["Lion","Tiger","Elephant","Leopard"],"answer":"Tiger","category":"Indian GK","difficulty":"easy"},
+{"question":"What is the national bird of India?","options":["Crow","Parrot","Peacock","Sparrow"],"answer":"Peacock","category":"Indian GK","difficulty":"easy"},
+{"question":"Which festival is known as Festival of Colors?","options":["Diwali","Holi","Eid","Christmas"],"answer":"Holi","category":"Indian GK","difficulty":"easy"},
+{"question":"Which is the longest river in India?","options":["Yamuna","Ganga","Godavari","Krishna"],"answer":"Ganga","category":"Indian GK","difficulty":"easy"},
+{"question":"Which monument is in Agra?","options":["India Gate","Taj Mahal","Red Fort","Qutub Minar"],"answer":"Taj Mahal","category":"Indian GK","difficulty":"easy"},
+{"question":"Who was first Prime Minister of India?","options":["Gandhi","Nehru","Patel","Rajendra Prasad"],"answer":"Nehru","category":"Indian GK","difficulty":"easy"},
+{"question":"What is national flower of India?","options":["Rose","Lotus","Lily","Sunflower"],"answer":"Lotus","category":"Indian GK","difficulty":"easy"},
+{"question":"Which state has Jaipur as capital?","options":["Punjab","Rajasthan","Gujarat","Haryana"],"answer":"Rajasthan","category":"Indian GK","difficulty":"easy"},
+{"question":"Which city is called Pink City?","options":["Jaipur","Delhi","Agra","Mumbai"],"answer":"Jaipur","category":"Indian GK","difficulty":"easy"},
+{"question":"Which animal is called King of Jungle?","options":["Tiger","Lion","Leopard","Elephant"],"answer":"Lion","category":"Animals","difficulty":"easy"},
+{"question":"Which animal has a long trunk?","options":["Lion","Elephant","Horse","Camel"],"answer":"Elephant","category":"Animals","difficulty":"easy"},
+{"question":"Which animal gives us wool?","options":["Cow","Sheep","Goat","Dog"],"answer":"Sheep","category":"Animals","difficulty":"easy"},
+{"question":"Which animal is fastest on land?","options":["Horse","Lion","Cheetah","Tiger"],"answer":"Cheetah","category":"Animals","difficulty":"easy"},
+{"question":"Which animal lives in desert?","options":["Camel","Elephant","Tiger","Cow"],"answer":"Camel","category":"Animals","difficulty":"easy"},
+{"question":"Which animal is known for black and white stripes?","options":["Horse","Zebra","Tiger","Lion"],"answer":"Zebra","category":"Animals","difficulty":"easy"},
+{"question":"Which animal jumps and carries baby in pouch?","options":["Kangaroo","Rabbit","Dog","Cat"],"answer":"Kangaroo","category":"Animals","difficulty":"easy"},
+{"question":"Which animal lives in water?","options":["Tiger","Fish","Lion","Dog"],"answer":"Fish","category":"Animals","difficulty":"easy"},
+{"question":"Which animal has long neck?","options":["Horse","Giraffe","Cow","Elephant"],"answer":"Giraffe","category":"Animals","difficulty":"easy"},
+{"question":"Which animal gives milk?","options":["Cow","Lion","Tiger","Horse"],"answer":"Cow","category":"Animals","difficulty":"easy"},
+{"question":"Which bird cannot fly?","options":["Parrot","Ostrich","Crow","Pigeon"],"answer":"Ostrich","category":"Birds","difficulty":"easy"},
+{"question":"Which bird hoots at night?","options":["Owl","Crow","Duck","Hen"],"answer":"Owl","category":"Birds","difficulty":"easy"},
+{"question":"Which bird can talk like humans?","options":["Crow","Parrot","Pigeon","Hen"],"answer":"Parrot","category":"Birds","difficulty":"easy"},
+{"question":"Which bird is symbol of peace?","options":["Dove","Crow","Owl","Duck"],"answer":"Dove","category":"Birds","difficulty":"easy"},
+{"question":"Which bird lays largest egg?","options":["Hen","Duck","Ostrich","Crow"],"answer":"Ostrich","category":"Birds","difficulty":"easy"},
+{"question":"Which bird swims in water?","options":["Duck","Crow","Parrot","Sparrow"],"answer":"Duck","category":"Birds","difficulty":"easy"},
+{"question":"Which bird builds nest on trees?","options":["Sparrow","Lion","Tiger","Dog"],"answer":"Sparrow","category":"Birds","difficulty":"easy"},
+{"question":"Which bird is black and says 'caw'?","options":["Crow","Parrot","Peacock","Duck"],"answer":"Crow","category":"Birds","difficulty":"easy"},
+{"question":"Which bird spreads colorful feathers?","options":["Peacock","Owl","Crow","Duck"],"answer":"Peacock","category":"Birds","difficulty":"easy"},
+{"question":"Which bird flies very high?","options":["Eagle","Duck","Hen","Crow"],"answer":"Eagle","category":"Birds","difficulty":"easy"},
+  
+{"question":"What is 14 + 6?","options":["18","19","20","21"],"answer":"20","category":"Maths","difficulty":"easy"},
+{"question":"What is 7 × 6?","options":["36","40","42","48"],"answer":"42","category":"Maths","difficulty":"easy"},
+{"question":"What is 81 ÷ 9?","options":["7","8","9","10"],"answer":"9","category":"Maths","difficulty":"easy"},
+{"question":"What is 25 + 15?","options":["35","40","45","50"],"answer":"40","category":"Maths","difficulty":"easy"},
+{"question":"What is the square of 8?","options":["56","60","64","72"],"answer":"64","category":"Maths","difficulty":"easy"},
+{"question":"How many hours are there in a day?","options":["12","18","24","36"],"answer":"24","category":"Maths","difficulty":"easy"},
+{"question":"What is 90 − 30?","options":["50","60","70","80"],"answer":"60","category":"Maths","difficulty":"easy"},
+{"question":"How many minutes are in one hour?","options":["30","45","60","90"],"answer":"60","category":"Maths","difficulty":"easy"},
+{"question":"Which planet is the largest in our solar system?","options":["Earth","Jupiter","Mars","Venus"],"answer":"Jupiter","category":"Science","difficulty":"easy"},
+{"question":"Which gas do humans breathe out?","options":["Oxygen","Carbon dioxide","Hydrogen","Helium"],"answer":"Carbon dioxide","category":"Science","difficulty":"easy"},
+{"question":"What do plants need to make food?","options":["Sunlight","Sand","Stone","Plastic"],"answer":"Sunlight","category":"Science","difficulty":"easy"},
+{"question":"Which part of the body helps us think?","options":["Heart","Brain","Liver","Kidney"],"answer":"Brain","category":"Science","difficulty":"easy"},
+{"question":"What is the boiling point of water?","options":["50°C","80°C","100°C","120°C"],"answer":"100°C","category":"Science","difficulty":"easy"},
+{"question":"Which planet has rings around it?","options":["Mars","Saturn","Earth","Mercury"],"answer":"Saturn","category":"Science","difficulty":"easy"},
+{"question":"What is the main source of energy for Earth?","options":["Moon","Sun","Wind","Water"],"answer":"Sun","category":"Science","difficulty":"easy"},
+{"question":"Which organ helps digest food?","options":["Heart","Stomach","Brain","Lungs"],"answer":"Stomach","category":"Science","difficulty":"easy"},
+{"question":"Which device is used to listen to sound from computer?","options":["Speaker","Mouse","Keyboard","Scanner"],"answer":"Speaker","category":"Computer","difficulty":"easy"},
+{"question":"Which key is used to erase letters?","options":["Delete","Enter","Shift","Ctrl"],"answer":"Delete","category":"Computer","difficulty":"easy"},
+{"question":"Which company makes the iPhone?","options":["Samsung","Google","Apple","Nokia"],"answer":"Apple","category":"Computer","difficulty":"easy"},
+{"question":"Which storage device is portable?","options":["Pen drive","Monitor","Mouse","Printer"],"answer":"Pen drive","category":"Computer","difficulty":"easy"},
+{"question":"Which button turns computer on?","options":["Power button","Enter","Shift","Space"],"answer":"Power button","category":"Computer","difficulty":"easy"},
+{"question":"Which device takes photos into computer?","options":["Camera","Keyboard","Mouse","Speaker"],"answer":"Camera","category":"Computer","difficulty":"easy"},
+{"question":"Which company created Facebook?","options":["Google","Meta","Microsoft","Apple"],"answer":"Meta","category":"Computer","difficulty":"easy"},
+{"question":"Which symbol is used in email address?","options":["#","@","$","%"],"answer":"@","category":"Computer","difficulty":"easy"},
+{"question":"What is the national currency of India?","options":["Dollar","Rupee","Euro","Yen"],"answer":"Rupee","category":"Indian GK","difficulty":"easy"},
+{"question":"Which city is the capital of Maharashtra?","options":["Pune","Nagpur","Mumbai","Nashik"],"answer":"Mumbai","category":"Indian GK","difficulty":"easy"},
+{"question":"Which Indian festival celebrates the birth of Lord Krishna?","options":["Holi","Janmashtami","Diwali","Eid"],"answer":"Janmashtami","category":"Indian GK","difficulty":"easy"},
+{"question":"Which Indian monument is in Delhi?","options":["Taj Mahal","India Gate","Charminar","Gateway of India"],"answer":"India Gate","category":"Indian GK","difficulty":"easy"},
+{"question":"Which state is famous for tea gardens?","options":["Assam","Punjab","Bihar","Rajasthan"],"answer":"Assam","category":"Indian GK","difficulty":"easy"},
+{"question":"Which is the national game of India (traditionally)?","options":["Cricket","Hockey","Football","Kabaddi"],"answer":"Hockey","category":"Indian GK","difficulty":"easy"},
+{"question":"Which river flows through Delhi?","options":["Ganga","Yamuna","Godavari","Narmada"],"answer":"Yamuna","category":"Indian GK","difficulty":"easy"},
+{"question":"Which Indian city is known as Silicon Valley of India?","options":["Delhi","Mumbai","Bangalore","Chennai"],"answer":"Bangalore","category":"Indian GK","difficulty":"easy"},
+{"question":"Which animal is known as man's best friend?","options":["Cat","Dog","Horse","Cow"],"answer":"Dog","category":"Animals","difficulty":"easy"},
+{"question":"Which animal has a shell?","options":["Tiger","Turtle","Elephant","Lion"],"answer":"Turtle","category":"Animals","difficulty":"easy"},
+{"question":"Which animal swings on trees?","options":["Monkey","Cow","Horse","Dog"],"answer":"Monkey","category":"Animals","difficulty":"easy"},
+{"question":"Which animal has a hump on its back?","options":["Camel","Horse","Cow","Goat"],"answer":"Camel","category":"Animals","difficulty":"easy"},
+{"question":"Which animal is the tallest in the world?","options":["Elephant","Horse","Giraffe","Camel"],"answer":"Giraffe","category":"Animals","difficulty":"easy"},
+{"question":"Which animal lives in cold icy regions?","options":["Lion","Penguin","Elephant","Camel"],"answer":"Penguin","category":"Animals","difficulty":"easy"},
+{"question":"Which bird lays eggs we eat daily?","options":["Crow","Hen","Duck","Owl"],"answer":"Hen","category":"Birds","difficulty":"easy"},
+{"question":"Which bird is known for its speed in the sky?","options":["Eagle","Duck","Hen","Crow"],"answer":"Eagle","category":"Birds","difficulty":"easy"},
+{"question":"Which bird migrates long distances?","options":["Crow","Hen","Swallow","Duck"],"answer":"Swallow","category":"Birds","difficulty":"easy"},
+{"question":"Which bird has a curved colorful beak?","options":["Parrot","Crow","Duck","Owl"],"answer":"Parrot","category":"Birds","difficulty":"easy"},
+{"question":"Which bird is often seen near water ponds?","options":["Duck","Crow","Owl","Parrot"],"answer":"Duck","category":"Birds","difficulty":"easy"},
+{"question":"Which bird is famous for its night vision?","options":["Owl","Crow","Hen","Parrot"],"answer":"Owl","category":"Birds","difficulty":"easy"}
   
   ]
