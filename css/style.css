@@ -1,29 +1,32 @@
 body{
 
-margin:0;
+background:#020617;
+
 font-family:Arial;
-background:linear-gradient(135deg,#0f172a,#020617);
 
 display:flex;
+
 justify-content:center;
+
 align-items:center;
 
 height:100vh;
+
 color:white;
 
 }
 
-.app{
+.quiz{
 
 width:360px;
 
-backdrop-filter:blur(15px);
-background:rgba(255,255,255,0.05);
+background:#1e293b;
 
-border-radius:16px;
 padding:20px;
 
-box-shadow:0 0 25px cyan;
+border-radius:12px;
+
+box-shadow:0 0 20px cyan;
 
 text-align:center;
 
@@ -32,63 +35,52 @@ text-align:center;
 input{
 
 width:100%;
-padding:12px;
+
+padding:10px;
+
 margin-bottom:10px;
 
-border:none;
-border-radius:8px;
-
-}
-
-button{
-
-width:100%;
-padding:12px;
-margin:6px 0;
+border-radius:6px;
 
 border:none;
-border-radius:8px;
-
-background:cyan;
-
-font-weight:bold;
-cursor:pointer;
 
 }
 
-button:hover{
+.top{
 
-background:#00e5ff;
+display:flex;
 
-}
+justify-content:space-between;
 
-.hidden{
-
-display:none;
+margin-bottom:10px;
 
 }
 
 #options{
 
 display:flex;
+
 flex-direction:column;
+
 gap:10px;
 
 }
 
 .option{
 
-background:rgba(255,255,255,0.1);
+background:#334155;
+
 padding:12px;
 
 border-radius:8px;
+
 cursor:pointer;
 
 }
 
 .option:hover{
 
-background:rgba(255,255,255,0.2);
+background:#475569;
 
 }
 
@@ -104,22 +96,22 @@ background:#dc2626 !important;
 
 }
 
-.progress{
+button{
 
-height:8px;
-background:#1e293b;
-
-border-radius:10px;
-margin-bottom:15px;
-
-}
-
-#progressBar{
-
-height:100%;
 width:100%;
+
+padding:12px;
+
+margin-top:10px;
+
+border:none;
+
+border-radius:8px;
+
 background:cyan;
 
-border-radius:10px;
+font-weight:bold;
+
+cursor:pointer;
 
 }
